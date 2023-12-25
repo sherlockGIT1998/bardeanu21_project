@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html>
+<html lang = "en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cluster Prediciton</title>
+</head>
+
+<body style = "background-color: rgb(151, 156, 233);">
+    
+    <h1> Componenrt cluster predicitor</h1>
+    <form method="GET" action ="/prediction">
+    
+            <label>nsites:</label>
+            <input type = "number" name = "nsites">
+            </select>
+
+            <br>
+            <br>
+
+            <label>volume:</label>
+            <select type="number" name = "volume">
+
+            </select>
+
+            <br>
+            <br>
+
+
+            <label>density:</label>
+            <input type = "number" name = "density">
+            </select>
+
+            <br>
+            <br>
+
+            <label>symmetry__number:</label>
+            <input type = "number" name = "symmetry__number">
+            </select>
+
+            <br>
+            <br>
+
+            <label>symmetry__symprec:</label>
+            <input type = "number" name = "symmetry__symprec">
+            </select>
+
+            <br>
+            <br>
+
+            <label>formation_energy_per_atom:</label>
+            <input type = "number" name = "formation_energy_per_atom">
+            </select>
+
+            <br>
+            <br>
+         
+            <label>energy_above_hull:</label>
+            <input type = "number" name = "energy_above_hull">
+            </select>
+
+            <br>
+            <br>
+
+            <label>is_stable:</label>
+            <label>Yes:</label> <input type = "radio" name="is_stable" value = "yes">
+            <label>No:</label> <input type = "radio" name="is_stable" value = "no">
+           
+            </select>
+
+            <br>
+            <br>
+
+            <label>band_gap:</label>
+            <input type = "number" name = "band_gap">
+            </select>
+
+            <br>
+            <br>
+
+            <label>is_gap_direct:</label>
+            <label>Yes:</label> <input type = "radio" name="is_gap_direct" value = "yes">
+            <label>No:</label> <input type = "radio" name="is_gap_direct" value = "no">
+            </select>
+
+            <br>
+            <br>
+
+            <label>is_metal:</label>
+            <label>Yes:</label> <input type = "radio" name="is_metal" value = "yes">
+            <label>No:</label> <input type = "radio" name="is_metal" value = "no">
+            
+            </select>
+
+            <br>
+            <br>
+
+            <label>total_magnetization:</label>
+            <input type = "number" name = "total_magnetization">
+            </select>
+
+            <br>
+            <br>
+
+            <label>theoretical:</label>
+            <label>Yes:</label> <input type = "radio" name="theoretical" value = "yes">
+            <label>No:</label> <input type = "radio" name="theoretical" value = "no">
+            </select>
+
+            <br>
+            <br>
+            <label>symmetry__crystal_system:</label>
+            <label for = "symmetry__crystal_system">
+            <select name = "symmetry__crystal_system" id="symmetry__crystal_system">
+                    <option value = "Hexagonal">Hexagonal</option>
+                    <option value = "Monoclinic">Monoclinic</option>
+                    <option value = "Orthorhombic">Orthorhombic</option>
+                    <option value = "Tetragonal">Tetragonal</option>
+                    <option value = "Triclinic">Triclinic</option>
+                    <option value = "Trigonal">Trigonal</option>
+            </select>
+
+            
+            </select>
+            <br>
+
+            <br>
+            <label>symmetry__symbol:</label>
+            <label for = "symmetry__symbol">
+            <select name = "symmetry__symbol" id="symmetry__symbol">
+                    <option value = "Ama2">Ama2</option>
+                    <option value = "C2">C2</option>
+                    <option value = "C2/c">C2/c</option>
+                    <option value = "C2/m">C2/m</option>
+                    <option value = "C222_1">C222_1</option>
+                    <option value = "Cm">Cm</option>
+                    <option value = "Cmc2_1">Cmc2_1</option>
+                    <option value = "Cmce">Cmce</option>
+                    <option value = "Cmcm">Cmcm</option>
+                    <option value = "Cmmm">Cmmm</option>
+                    <option value = "F-43m">F-43m/option>
+                    <option value = "Fd-3m">Fd-3m</option>
+                    <option value = "Fm-3m">Fm-3m</option>
+                    <option value = "I4/m">I4/m</option>
+                    <option value = "I4/mcm">I4/mcm</option>
+                    <option value = "I4_1/amd">I4_1/amd</option>
+                    <option value = "Im-3m">Im-3m</option>
+                    <option value = "Imma">Imma</option>
+                    <option value = "P-1">P-1</option>
+                    <option value = "P-31c">P-31c</option>
+                    <option value = "P-31m">P-31m</option>
+                    <option value = "P-3m1">P-3m1</option>
+                    <option value = "4m2">4m2</option>
+                    <option value = "P-62m">P-62m</option>
+                    <option value = "P-6m2">P-6m2/option>
+                    <option value = "P1">P1</option>
+                    <option value = "P2/c">P2/c</option>
+                    <option value = "P2/m">P2/m</option>
+                    <option value = "P2_1/c">P2_1/c</option>
+                    <option value = "P312">P312/option>
+                    <option value = "P321">P321</option>
+                    <option value = "P3m1">>P3m1</option>
+                    <option value = "P3_1">3_1</option>
+                    <option value = "P4/mcc">P4/mcc</option>
+                    <option value = "P4_2/mnm">P4_2/mnm</option>
+                    <option value = "P6_3/mmc">P6_3/mmc/option>
+                    <option value = "P6_522">P6_522</option>
+                    <option value = "Pbca">Pbca</option>
+                    <option value = "Pa-3">Pa-3</option>
+                    <option value = "Pbcn">Pbcn</option>
+                    <option value = "Pm-3m">Pm-3m</option>
+                    <option value = "Pmmn">Pmmn</option>
+                    <option value = "Pnma">Pnma</option>
+                    <option value = "R-3">R-3</option>
+                    <option value = "R-3c">R-3c</option>
+                    <option value = "R-3m">R-3m</option>
+                     <option value = "R3m">R3m</option>
+                    
+
+            </select>
+            <br>
+
+            <br>
+            <label>symmetry__point_group:</label>
+            <label for = "symmetry__point_group">
+            <select name = "symmetry__point_group" id="symmetry__point_group">
+                    <option value = "-1">-1/option>
+                    <option value = "-3">-3</option>
+                    <option value = "-3m">-3m</option>
+                    <option value = "-42m">-42m</option>
+                    <option value = "-43m">-43m</option>
+                    <option value = "-6m2">-6m2</option>
+                    <option value = "_1">_1</option>
+                    <option value = "_2">_2</option>
+                    <option value = "_2/m">_2/m</option>
+                    <option value = "_222">_222</option>
+                    <option value = "_32">_32</option>
+                    <option value = "_3m">_3m</option>
+                    <option value = "_4/m">_4/m</option>
+                    <option value = "_4/mmm">_4/mmm</option>
+                    <option value = "_6/mmm">_6/mmm</option>
+                    <option value = "_622">_622</option>
+                    <option value = "_m">_m</option>
+                    <option value = "_m-3">_m-3</option>
+                    <option value = "_m-3m">_m-3m</option>
+                    <option value = "_mm2">_mm2</option>
+                    <option value = "_mmm">_mmm</option>
+                
+
+
+
+            </select>
+            <br>
+
+            <br>
+            <label>ordering:</label>
+            <label for = "ordering">
+            <select name = "ordering" id="ordering">
+                    <option value = "_AFM">_AFM</option>
+                    <option value = "_FM">_FM</option>
+                    <option value = "_FiM">_FiM</option>
+                    <option value = "_NM">_NM</option>
+            </select>
+            <br>
+
+            <input type = "submit" value = "SUBMIT">
+
+            <br>
+            <p> <b>{{ prediction }} </b> </p>
+    
+        </form>
+</body>
+</html>
